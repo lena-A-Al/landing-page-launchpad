@@ -70,14 +70,58 @@ header {
  * YOUR CSS:
  */
 
-#about {
-  display: flex;
-  flex-direction: column;
+/* header section */
+header{
+  position:fixed;
+  z-index:1;
+  width: calc(100% - 30px);
+  margin: 0 15px 0 15px;
+  display:flex;
+  border-radius: 0 0 1rem 1rem;
+  justify-content:space-between;
 }
 
-#about div {
+nav {
   display: flex;
 }
+
+header img {
+  width: 30%;
+  padding: 0.5rem;
+}
+
+
+.nav-item a {
+  display: flex;
+  color: white;
+  font-size: 30px;
+  align-items: flex-end;
+  padding: 0.5rem;
+  text-decoration: none;
+  justify-content:flex-end;
+
+}
+
+/* carousel section */
+/* #carousel{
+  padding-top: 100px;
+} */
+
+#carousel-text{
+  text-align:center;
+  position:absolute;
+  width:100%;
+  padding-top: 300px;
+  color:white;
+  font-size: 20px;
+}
+
+/* about section */
+#about > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
 #about p {
   justify-content: center;
   align-items: center;
@@ -90,18 +134,31 @@ header {
   align-self: flex-end;
 }
 
-#staff div {
+/* staff section */
+#staff div  {
   display: flex;
-}
-
-div .staff-profile {
   flex-wrap: wrap;
-  /* flex: auto; */
-  justify-content: center;
+}
+.staff-profile {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
+  /* flex-wrap: wrap; */
+}
+div h3{
+  font-weight:bold;
+  align-items:center;
+  font-size: 30px;
+ }
+
+.staff-bio{
+  align-items:center;
+  margin-left:23px;
+
 }
 
-.staff-profile {
-  flex: auto;
-  flex-direction: column;
+.headshot {
+  font-size: 70px;
 }
